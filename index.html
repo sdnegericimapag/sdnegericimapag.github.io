@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>SD Negeri Cimapag</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .image-text {
+      display: flex;
+      align-items: flex-start;   /* teks sejajar atas */
+      gap: 1rem;
+    }
+
+    .image-text img {
+      width: 150px;      
+      max-width: 100%;   
+      height: auto;
+    }
+
+    .image-text .text {
+      flex: 1;
+    }
+
+ a.selengkapnya {
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;     /* animasi lembut */
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+a.selengkapnya:hover {
+  color: #003399;            /* biru lebih gelap saat hover */
+  border-bottom: 2px solid #003399;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/logocimapag.png" alt="Logo">
+      <span>SD Negeri Cimapag</span>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+
+      <li>
+        <a href="#">Profil ▾</a>
+        <ul>
+          <li><a href="logo.html">Logo</a></li>
+          <li><a href="visimisi.html">Visi & Misi</a></li>
+          <li><a href="identitas.html">Identitas Sekolah</a></li>
+          <li><a href="tentang.html">Tentang Sekolah</a></li>
+        </ul>
+      </li>
+
+      <li><a href="tendik">Guru</a></li>
+
+      <li>
+        <a href="#">Kegiatan ▾</a>
+        <ul>
+          <li><a href="eskul">Ekstrakurikuler</a></li>
+          <li><a href="lomba">Perlombaan</a></li>
+          <li><a href="prestasi">Prestasi</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Dokumentasi ▾</a>
+        <ul>
+          <li><a href="galeri">Foto & Video</a></li>
+          <li><a href="download">Download</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ===== BANNER ===== -->
+  <div class="banner">
+    <img src="img/bannercimapag.jpg" alt="Banner Sekolah">
+    <div class="banner-text left">Besok Adalah Hari Menikmati Hasil Belajarmu Hari Ini</div>
+    <div class="banner-text right">Beranda</div>
+  </div>
+
+  <!-- ===== CONTAINER DUA KOLOM ===== -->
+  <section class="two-column">
+    
+    <!-- KONTEN KIRI -->
+    <div class="left-content">
+      <h1>Selamat Datang di Website SD Negeri Cimapag</h1>
+
+      <div class="image-text">
+        <img src="img/logosekolah.png" alt="logo sekolah">
+
+        <div class="text">
+          <h2>Assalamu’alaikum warahmatullahi wabarakatuh.</h2>
+
+          <p>Selamat datang di website resmi SD Negeri Cimapag.
+          Website ini kami hadirkan sebagai sarana informasi, komunikasi, dan publikasi kegiatan sekolah kepada masyarakat luas.</p>
+
+          <p>Melalui situs ini, kami berkomitmen memberikan informasi terkini seputar kegiatan pembelajaran, pengumuman penting, prestasi siswa, dan inovasi sekolah.</p>
+
+          <p>Terima kasih atas dukungan seluruh warga sekolah dan masyarakat yang selalu berpartisipasi aktif dalam meningkatkan mutu pendidikan di SD Negeri Cimapag.</p>
+
+          <p>
+            Salam hangat,<br>
+            Kepala Sekolah SD Negeri Cimapag<br>
+            Siti Mariam, S.Pd.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KONTEN KANAN -->
+    <div class="right-content">
+      
+      <h1>Informasi Terbaru</h1>
+     <img src="gbr/gbr1.jpeg" alt="" class="center-image" style="width: 150px;">
+      <h3>Kertas Kerja BOSP Tahun Anggaran 2026 Telah Rilis</h3>
+      <p>Pemerintah melalui Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi resmi merilis 
+        Kertas Kerja Bantuan Operasional Satuan Pendidikan (BOSP) untuk 
+        Tahun Anggaran, ... <a href="sekilasinfo.html#konten-bosp" class="selengkapnya">Selengkapnya</a></p>
+      
+    </div>
+    
+  </section>
+  
+<!-- CONTAINER TUNGGAL DI BAWAH SECTION DUA KOLOM -->
+<section class="artikel-section">
+  <h2 class="artikel-section-title">Berita Terbaru</h2>
+
+  <div id="artikel-list"></div>
+  <div id="artikel-view" style="display:none;"></div>
+</section>
+
+<script src="js/artikel.js"></script>
+
+
+
+  
+ 
+  <!-- SARANN PESAN -->
+<section class="saran-pesan-section">
+    <div class="saran-header">
+        <i class="fa-solid fa-comment-dots"></i>
+        <h1 style="text-align:center; font-size: 28px; margin-bottom: 10px; color: black;">
+       Saran untuk Pengembangan Website
+    </h1>
+    
+
+    </div>
+
+    <div class="saran-frame">
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdsxahxKe6gCuLNTegp9WkeRgTFVhM1y1VePAlMtLZ0GSnO3g/viewform?embedded=true"></iframe>
+    </div>
+</section>
+  
+<!-- FOOTER-->
+<footer class="custom-footer">
+
+  <div class="footer-container">
+
+    <!-- Kolom 1 -->
+    <div class="footer-column">
+      <h3>Hubungi Kami</h3>
+      <p><strong>SD Negeri Cimapag</strong></p>
+
+      <div class="footer-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Jln. Cireunghas Kp. Nagrog RT 03/07 Desa/Kec. Cireunghas – Sukabumi 43193</span>
+      </div>
+
+      <p><i class="fa-solid fa-phone"></i> Telepon: -</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: sdncimapag37@gmail.com</p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="footer-column">
+      <h3>Tags</h3>
+      <div class="tags">
+        <a href="pengumuman"><span>PENGUMUMAN</span></a>
+        <a href="sekilasinfo"><span>SEKILAS INFO</span></a>
+        <a href="#" id="openPopup"><span>KEGIATAN TERBARU</span></a>
+
+      </div>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div class="footer-column">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/instagram.png"></a>
+        <a href="#"><img src="img/youtube.png"></a>
+      </div>
+    </div>
+    <!-- Kolom 4 -->
+     <div class="footer-column">
+  <h3>Layanan</h3>
+  <div class="layanan-list">
+    <a href="#">PPDB Online</a>
+    <a href="#">Ult Kemendikdasmen</a>
+    <a href="#">PIP Kemedikdasmen</a>
+    <a href="#">Pusat Prestasi Nasional</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Bottom bar 1 -->
+  <div class="footer-bottom-bar1">
+    <div class="footer-bottom-images">
+      <img src="img/akunbelajar.png">
+      <img src="img/arkas.png">
+      <img src="img/pendidikanbermutu.png">
+      <img src="img/ramah.png">
+      <img src="img/ruanggtk1.png">
+      <img src="img/rumahpendidikan.png">
+      <img src="img/siplah.png">
+    </div>
+  </div>
+
+  <!-- Bottom bar 2 -->
+  <div class="footer-bottom">
+    Copyright ©2025 <span class="footer-school">SD Negeri Cimapag</span> All rights reserved.
+  </div>
+
+</footer>
+
+  <div id="popup-modal" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+
+        <img src="img/kegiatan1.jpg" id="popup-gambar" alt="kegiatan terbaru">
+
+        <h2 id="popup-judul">Kegiatan Terbaru</h2>
+
+        <p id="popup-ringkasan">
+            Ini adalah ringkasan kegiatan terbaru dari Eskul / Perlombaan / Prestasi.
+        </p>
+
+        <a href="eskul.html" id="popup-link" class="popup-btn">
+            Buka Halaman Lengkap
+        </a>
+    </div>
+</div>
+
+  <script src="js/popup.js"></script>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
