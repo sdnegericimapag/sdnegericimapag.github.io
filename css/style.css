@@ -610,7 +610,7 @@ p {
 .footer-bottom-bar1 {
     max-width: 1200px;
     margin: 40px auto 10px auto;
-    padding: 0 40px;
+    padding: 0 20px;
     background: #EBFAFF;
 }
 
@@ -632,7 +632,7 @@ p {
 .footer-bottom {
     background: #0078A2;
     text-align: center;
-    padding: 5px 40px;
+    padding: 5px 20px;
     margin-top: 0px;
     color: #fff;
     font-size: 14px;
@@ -751,6 +751,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
