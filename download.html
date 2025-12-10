@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>SD Negeri Cimapag</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f8ff;
+    padding: 40px 0;
+  }
+
+  .container-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .file-card {
+    width: 180px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .file-card img {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+
+  .file-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 40px;
+  }
+
+  .download-btn {
+    display: inline-block;
+    background: #0066ff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .download-btn:hover {
+    background: #004ecc;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/logocimapag.png" alt="Logo">
+      <span>SD Negeri Cimapag</span>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+
+      <li>
+        <a href="#">Profil ▾</a>
+        <ul>
+          <li><a href="logo.html">Logo</a></li>
+          <li><a href="visimisi.html">Visi & Misi</a></li>
+          <li><a href="identitas.html">Identitas Sekolah</a></li>
+          <li><a href="tentang.html">Tentang Sekolah</a></li>
+        </ul>
+      </li>
+
+      <li><a href="tendik">Guru</a></li>
+
+      <li>
+        <a href="#">Kegiatan ▾</a>
+        <ul>
+          <li><a href="eskul">Ekstrakurikuler</a></li>
+          <li><a href="lomba">Perlombaan</a></li>
+          <li><a href="prestasi">Prestasi</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Dokumentasi ▾</a>
+        <ul>
+          <li><a href="galeri">Foto & Video</a></li>
+          <li><a href="download">Download</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ===== BANNER ===== -->
+  <div class="banner">
+    <img src="img/bannercimapag.jpg" alt="Banner Sekolah">
+    <div class="banner-text left">Besok Adalah Hari Menikmati Hasil Belajarmu Hari Ini</div>
+    <div class="banner-text right">Beranda</div>
+  </div>
+
+
+
+<h2 style="text-align:center; margin-bottom:30px;">Download Dokumen</h2>
+
+<div class="container-wrapper">
+
+  <!-- CARD 1 -->
+  <div class="file-card">
+    <img src="img/pdf.png" alt="pdf icon">
+    <div class="file-title">Dokumen PDF Contoh</div>
+    <a href="file/contoh.pdf" download class="download-btn">Download</a>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="file-card">
+    <img src="img/word.png" alt="word icon">
+    <div class="file-title">Laporan Word</div>
+    <a href="file/laporan.docx" download class="download-btn">Download</a>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="file-card">
+    <img src="img/excel.png" alt="excel icon">
+    <div class="file-title">Data Excel</div>
+    <a href="file/data.xlsx" download class="download-btn">Download</a>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="file-card">
+    <img src="img/zip.png" alt="zip icon">
+    <div class="file-title">Berkas .ZIP</div>
+    <a href="file/arsip.zip" download class="download-btn">Download</a>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="file-card">
+    <img src="img/pdf.png" alt="pdf icon">
+    <div class="file-title">Panduan Guru</div>
+    <a href="file/panduan.pdf" download class="download-btn">Download</a>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="file-card">
+    <img src="img/word.png" alt="word icon">
+    <div class="file-title">Format Administrasi</div>
+    <a href="file/admin.docx" download class="download-btn">Download</a>
+  </div>
+
+</div>
+
+<!-- FOOTER-->
+<footer class="custom-footer">
+
+  <div class="footer-container">
+
+    <!-- Kolom 1 -->
+    <div class="footer-column">
+      <h3>Hubungi Kami</h3>
+      <p><strong>SD Negeri Cimapag</strong></p>
+
+      <div class="footer-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Jln. Cireunghas Kp. Nagrog RT 03/07 Desa/Kec. Cireunghas – Sukabumi 43193</span>
+      </div>
+
+      <p><i class="fa-solid fa-phone"></i> Telepon: -</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: sdncimapag37@gmail.com</p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="footer-column">
+      <h3>Tags</h3>
+      <div class="tags">
+        <a href="pengumuman"><span>PENGUMUMAN</span></a>
+        <a href="sekilasinfo"><span>SEKILAS INFO</span></a>
+        <a href="#" id="openPopup"><span>KEGIATAN TERBARU</span></a>
+
+      </div>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div class="footer-column">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/instagram.png"></a>
+        <a href="#"><img src="img/youtube.png"></a>
+      </div>
+    </div>
+    <!-- Kolom 4 -->
+     <div class="footer-column">
+  <h3>Layanan</h3>
+  <div class="layanan-list">
+    <a href="#">PPDB Online</a>
+    <a href="#">Ult Kemendikdasmen</a>
+    <a href="#">PIP Kemedikdasmen</a>
+    <a href="#">Pusat Prestasi Nasional</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Bottom bar 1 -->
+  <div class="footer-bottom-bar1">
+    <div class="footer-bottom-images">
+      <img src="img/akunbelajar.png">
+      <img src="img/arkas.png">
+      <img src="img/pendidikanbermutu.png">
+      <img src="img/ramah.png">
+      <img src="img/ruanggtk1.png">
+      <img src="img/rumahpendidikan.png">
+      <img src="img/siplah.png">
+    </div>
+  </div>
+
+  <!-- Bottom bar 2 -->
+  <div class="footer-bottom">
+    Copyright ©2025 <span class="footer-school">SD Negeri Cimapag</span> All rights reserved.
+  </div>
+
+</footer>
+
+  <div id="popup-modal" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+
+        <img src="img/kegiatan1.jpg" id="popup-gambar" alt="kegiatan terbaru">
+
+        <h2 id="popup-judul">Kegiatan Terbaru</h2>
+
+        <p id="popup-ringkasan">
+            Ini adalah ringkasan kegiatan terbaru dari Eskul / Perlombaan / Prestasi.
+        </p>
+
+        <a href="eskul.html" id="popup-link" class="popup-btn">
+            Buka Halaman Lengkap
+        </a>
+    </div>
+</div>
+
+  <script src="js/popup.js"></script>
+
+
+
+</body>
+</html>
