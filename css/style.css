@@ -608,7 +608,7 @@ p {
    BOTTOM BAR 1 — ISI GAMBAR KE KANAN
    ======================================================= */
 .footer-bottom-bar1 {
-    max-width: 1200px;
+    /*-- max-width: 1200px;--*/
     margin: 40px auto 10px auto;
     padding: 0 5px;
     background: #EBFAFF;
@@ -637,7 +637,7 @@ p {
     color: #fff;
     font-size: 14px;
     font-style:italic;
-    max-width: 1200px;   /* Tambahkan ini */
+    /*-- max-width: 1200px;    Tambahkan ini */
     margin-left: auto;   /* Supaya center */
     margin-right: auto;  /* Supaya center */
     
