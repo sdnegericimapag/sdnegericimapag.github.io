@@ -674,11 +674,11 @@ p {
 .popup-content img {
     width: 85%;
     max-width: 320%;
-    max-height: 40vh;      /* ⬅ batasi tinggi gambar */
+    max-height: 240%;      /* ⬅ batasi tinggi gambar */
     height: auto;
     object-fit: contain;  /* ⬅ gambar selalu utuh */
     display: block;
-    margin: 0 auto 5px;   /* ⬅ posisi tengah */
+    margin: 5px 5px;   /* ⬅ posisi tengah */
     border-radius: 5px;
 }
 
@@ -757,6 +757,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
