@@ -678,8 +678,8 @@ p {
     height: auto;
     object-fit: contain;  /* ⬅ gambar selalu utuh */
     display: block;
-    margin: 0 auto 15px;   /* ⬅ posisi tengah */
-    border-radius: 10px;
+    margin: 0 auto 5px;   /* ⬅ posisi tengah */
+    border-radius: 5px;
 }
 
 
@@ -757,6 +757,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
