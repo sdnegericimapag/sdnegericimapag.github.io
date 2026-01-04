@@ -701,6 +701,15 @@ p {
     margin-top: -10px;
 }
 
+.popup-view {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+
 @keyframes fadeIn {
     from { opacity:0; }
     to { opacity:1; }
@@ -757,6 +766,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
