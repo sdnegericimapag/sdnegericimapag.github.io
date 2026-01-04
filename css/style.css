@@ -663,7 +663,7 @@ p {
 .popup-content {
     background: #fff;
     width: 95%;
-    max-width: 600px;
+    max-width: 450px;
     margin: 6% auto;
     padding: 25px;
     border-radius: 14px;
@@ -757,6 +757,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
