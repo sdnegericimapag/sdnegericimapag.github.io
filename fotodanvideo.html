@@ -11,22 +11,56 @@
   <link rel="stylesheet" href="css/style.css">
   
   <style>
-    .image-text {
-      display: flex;
-      align-items: flex-start;   /* teks sejajar atas */
-      gap: 1rem;
-    }
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f8ff;
+    padding: 40px 0;
+  }
 
-    .image-text img {
-      width: 150px;      
-      max-width: 100%;   
-      height: auto;
-    }
+  .container-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    .image-text .text {
-      flex: 1;
-    }
+  .file-card {
+    width: 180px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
 
+  .file-card img {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+
+  .file-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 40px;
+  }
+
+  .download-btn {
+    display: inline-block;
+    background: #0066ff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .download-btn:hover {
+    background: #004ecc;
+  }
   </style>
 </head>
 
@@ -182,6 +216,7 @@
 
 </body>
 </html>
+
 
 
 
