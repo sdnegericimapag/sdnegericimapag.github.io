@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Negeri Cimapag</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    
+    font-family: Arial, sans-serif; {
+    margin: 0;
+    background: #f4f8ff;
+    padding: 0 0;
+  }
+  
+  
+  .foto-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.foto-container img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.foto-container img:hover {
+  transform: scale(1.03);
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif; /* jenis font */
+  font-size: 14px;      
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/logocimapag.png" alt="Logo">
+      <span>SD Negeri Cimapag</span>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+
+      <li>
+        <a href="#">Profil ▾</a>
+        <ul>
+          <li><a href="logo.html">Logo</a></li>
+          <li><a href="visimisi.html">Visi & Misi</a></li>
+          <li><a href="identitas.html">Identitas Sekolah</a></li>
+          <li><a href="tentang.html">Tentang Sekolah</a></li>
+        </ul>
+      </li>
+
+      <li><a href="tendik">Guru</a></li>
+
+      <li>
+        <a href="#">Kegiatan ▾</a>
+        <ul>
+          <li><a href="eskul">Ekstrakurikuler</a></li>
+         <li><a href="lomba">Perlombaan</a></li>
+          <li><a href="prestasi">Prestasi</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Dokumentasi ▾</a>
+        <ul>
+          <li><a href="galeri">Foto & Video</a></li>
+          <li><a href="download">Download</a></li>
+        </ul>
+      </li>
+      </ul>
+  </div>
+
+  <!-- ===== BANNER ===== -->
+  <div class="banner">
+    <img src="img/bannercimapag.jpg" alt="Banner Sekolah">
+    <div class="banner-text left">Besok Adalah Hari Menikmati Hasil Belajarmu Hari Ini</div>
+    <div class="banner-text right">Galeri</div>
+  </div>
+
+  <div class="container">
+  <h2 style="text-align:left; margin-bottom:30px;">Galeri Poto</h2>
+
+<div class="foto-container">
+  <figure>
+    <a href="poto/pramuka1.jpeg" target="_blank">
+    <img src="poto/pramuka1.jpeg" alt="Pramuka 1">
+    </a>
+  </figure>
+  <figure>
+    <a href="poto/pramuka2.jpeg" target="_blank">
+    <img src="poto/pramuka2.jpeg" alt="Pramuka 2">
+    </a>
+  </figure>
+  <figure>
+     <a href="poto/pramuka3.jpeg" target="_blank">
+    <img src="poto/pramuka3.jpeg" alt="Pramuka 3">
+    </a>
+  </figure>
+  <figure>
+    <a href="poto/pramuka4.jpeg" target="_blank">
+    <img src="poto/pramuka4.jpeg" alt="Pramuka 4">
+    </a>
+    <figcaption>Kegiatan Ekstrakurikuler Pramuka</figcaption>
+  </figure>
+</div>
+</div>
+
+
+<!-- FOOTER-->
+<footer class="custom-footer">
+
+  <div class="footer-container">
+
+    <!-- Kolom 1 -->
+    <div class="footer-column">
+      <h3>Hubungi Kami</h3>
+      <p><strong>SD Negeri Cimapag</strong></p>
+
+      <div class="footer-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Jln. Cireunghas Kp. Nagrog RT 03/07 Desa/Kec. Cireunghas – Sukabumi 43193</span>
+      </div>
+
+      <p><i class="fa-solid fa-phone"></i> Telepon: -</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: sdncimapag37@gmail.com</p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="footer-column">
+      <h3>Tags</h3>
+      <div class="tags">
+        <a href="#"id="openPengumuman"><span>PENGUMUMAN</span></a>
+        <a href="sekilasinfo"><span>SEKILAS INFO</span></a>
+        <a href="#" id="openPopup"><span>KEGIATAN TERBARU</span></a>
+
+      </div>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div class="footer-column">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/instagram.png"></a>
+        <a href="#"><img src="img/youtube.png"></a>
+      </div>
+    </div>
+    <!-- Kolom 4 -->
+     <div class="footer-column">
+  <h3>Layanan</h3>
+  <div class="layanan-list">
+    <a href="ppdb">PPDB Online</a>
+    <a href="https://ult.kemendikdasmen.go.id" target="_blank"> Ult Kemendikdasmen</a>
+    <a href="https://pip.kemendikdasmen.go.id">PIP Kemedikdasmen</a>
+    <a href="https://pusatprestasinasional.kemendikdasmen.go.id">Pusat Prestasi Nasional</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Bottom bar 1 -->
+  <div class="footer-bottom-bar1">
+    <div class="footer-bottom-images">
+      <img src="img/akunbelajar.png">
+      <img src="img/arkas.png">
+      <img src="img/pendidikanbermutu.png">
+      <img src="img/ramah.png">
+      <img src="img/ruanggtk1.png">
+      <img src="img/rumahpendidikan.png">
+      <img src="img/siplah.png">
+    </div>
+  </div>
+
+  <!-- Bottom bar 2 -->
+  <div class="footer-bottom">
+    Copyright ©2025 <span class="footer-school">SD Negeri Cimapag</span> All rights reserved.
+  </div>
+
+</footer>
+
+  <div id="popup-modal" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+
+       <img src="poto/pramuka2.jpeg" id="popup-gambar" alt="kegiatan terbaru">
+        <h2 id="popup-judul">Kegiatan Terbaru</h2>
+
+        <p id="popup-ringkasan">
+            Sekolah kami saat ini sedang mengadakan kegiatan ekstrakurikuler Pramuka sebagai upaya pembinaan karakter peserta didik 
+            agar menjadi pribadi yang disiplin, mandiri, dan bertanggung jawab. Kegiatan ini bertujuan untuk melatih kedisiplinan, 
+            kerja sama, dan kemandirian peserta didik melalui kegiatan yang edukatif dan menyenangkan.
+        </p>
+
+        <a href="eskul.html" id="popup-link" class="popup-btn">
+            Buka Halaman Lengkap
+        </a>
+    </div>
+</div>
+  
+<div id="popup-pengumuman" class="popup">
+  <div class="popup-content">
+    <span class="close-pengumuman">&times;</span>
+    <img src="poto/pengumuman.jpeg" alt="Pengumuman" class="popup-img">
+    <h2> </h2>
+    <p> </p>
+    <a href="poto/pengumuman.jpeg" target="_blank" class="popup-view">
+  Lihat Selengkapnya...
+</a>
+  </div>
+</div>
+
+<script src="js/popup-pengumuman.js"></script>
+  <script src="js/popup.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
