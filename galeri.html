@@ -30,6 +30,12 @@
   height: 320px;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.foto-container img:hover {
+  transform: scale(1.03);
 }
 
 </style>
@@ -90,8 +96,9 @@
 
 <div class="foto-container">
   <figure>
-    <img src="poto/pramuka1.jpeg" alt="foto 1">
-    <a href="poto/pramuka1.jpeg" target="_blank" class="popup-view">Lihat...</a>
+    <a href="poto/pramuka1.jpeg" target="_blank">
+        <img src="poto/pramuka1.jpeg" alt="Pramuka 1">
+      </a>
   </figure>
   <figure>
     <img src="poto/pramuka2.jpeg" alt="foto 2">
@@ -217,6 +224,7 @@
 
 </body>
 </html>
+
 
 
 
