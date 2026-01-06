@@ -18,34 +18,37 @@
     padding: 0 0;
   }
   
-  
-  .foto-container {
+.foto-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.foto-container img {
+.foto-container figure {
+  margin: 0;
+  text-align: center;
+}
+
+.foto-container img,
+.foto-container video {
   width: 100%;
   height: 320px;
   object-fit: cover;
   border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
 }
 
-.foto-container img:hover {
-  transform: scale(1.03);
+.popup-view {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: none;
 }
 
-figcaption {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 13px;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif; /* jenis font */
-  font-size: 14px;      
+.popup-view:hover {
+  text-decoration: underline;
 }
+
 
 </style>
 </head>
@@ -86,7 +89,8 @@ figcaption {
       <li>
         <a href="#">Dokumentasi ▾</a>
         <ul>
-          <li><a href="galeri">Foto & Video</a></li>
+          <li><a href="galeri">Video</a></li>
+          <li><a href="galerivideo">Video</a></li>
           <li><a href="download">Download</a></li>
         </ul>
       </li>
@@ -100,32 +104,44 @@ figcaption {
     <div class="banner-text right">Galeri</div>
   </div>
 
-  <div class="container">
-  <h2 style="text-align:left; margin-bottom:30px;">Galeri Poto</h2>
+ <div class="container">
+  <h2 style="text-align:left; margin-bottom:30px;">Galeri Video</h2>
 
-<div class="foto-container">
-  <figure>
-    <a href="poto/pramuka1.jpeg" target="_blank">
-    <img src="poto/pramuka1.jpeg" alt="Pramuka 1">
-    </a>
-  </figure>
-  <figure>
-    <a href="poto/pramuka2.jpeg" target="_blank">
-    <img src="poto/pramuka2.jpeg" alt="Pramuka 2">
-    </a>
-  </figure>
-  <figure>
-     <a href="poto/pramuka3.jpeg" target="_blank">
-    <img src="poto/pramuka3.jpeg" alt="Pramuka 3">
-    </a>
-  </figure>
-  <figure>
-    <a href="poto/pramuka4.jpeg" target="_blank">
-    <img src="poto/pramuka4.jpeg" alt="Pramuka 4">
-    </a>
-    <figcaption>Kegiatan Ekstrakurikuler Pramuka</figcaption>
-  </figure>
-</div>
+  <div class="foto-container">
+
+    <figure>
+      <video controls>
+        <source src="video/eskulpramuka1.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <a href="video/eskulpramuka1.mp4" target="_blank" class="popup-view">Lihat...</a>
+    </figure>
+
+    <figure>
+      <video controls>
+        <source src="video/pramuka2.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <a href="video/pramuka2.mp4" target="_blank" class="popup-view">Lihat...</a>
+    </figure>
+
+    <figure>
+      <video controls>
+        <source src="video/pramuka3.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <a href="video/pramuka3.mp4" target="_blank" class="popup-view">Lihat...</a>
+    </figure>
+
+    <figure>
+      <video controls>
+        <source src="video/pramuka4.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <a href="video/pramuka4.mp4" target="_blank" class="popup-view">Lihat...</a>
+    </figure>
+
+  </div>
 </div>
 
 
@@ -237,6 +253,7 @@ figcaption {
 
 </body>
 </html>
+
 
 
 
