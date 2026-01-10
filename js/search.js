@@ -1,81 +1,94 @@
+document.addEventListener("DOMContentLoaded", function () {
 
-const pages = [
-  "index.html",
-  "logo.html",
-  "visimisi.html",
-  "identitas.html",
-  "tentang.html",
-  "tendik",
-  "eskul",
-  "lomba",
-  "prestasi",
-  "galeri",
-  "galerivideo",
-  "sekilasinfo",
-  "download"
-];
+  // Ambil elemen search
+  const input = document.getElementById("searchInput");
+  const results = document.getElementById("searchResults");
 
-const searchIndex = [];
+  // Jika halaman tidak punya search, hentikan script
+  if (!input || !results) return;
 
-Promise.all(
-  pages.map(page =>
-    fetch(page)
-      .then(res => res.text())
-      .then(html => {
-        const doc = new DOMParser().parseFromString(html, "text/html");
+  // DAFTAR HALAMAN (SESUIKAN DENGAN NAVBAR)
+  const pages = [
+    "index.html",
+    "logo.html",
+    "visimisi.html",
+    "identitas.html",
+    "tentang.html",
+    "tendik",
+    "eskul",
+    "lomba",
+    "prestasi",
+    "galeri",
+    "galerivideo",
+    "sekilasinfo",
+    "download"
+  ];
 
-        const title =
-          doc.querySelector("h1")?.innerText ||
-          doc.querySelector("title")?.innerText ||
-          page;
+  // Index pencarian
+  const searchIndex = [];
+  let lastResults = [];
 
-        const content = [...doc.querySelectorAll("h1,h2,h3,p,li")]
-          .map(el => el.innerText)
-          .join(" ")
-          .toLowerCase();
+  // Ambil isi semua halaman
+  Promise.all(
+    pages.map(page =>
+      fetch(page)
+        .then(res => {
+          if (!res.ok) throw new Error("Tidak ditemukan: " + page);
+          return res.text();
+        })
+        .then(html => {
+          const doc = new DOMParser().parseFromString(html, "text/html");
 
-        searchIndex.push({ title, url: page, content });
-      })
-  )
-);
+          const title =
+            doc.querySelector("h1")?.innerText ||
+            doc.querySelector("title")?.innerText ||
+            page;
 
-const input = document.getElementById("searchInput");
-const results = document.getElementById("searchResults");
+          const content = [...doc.querySelectorAll("h1,h2,h3,p,li")]
+            .map(el => el.innerText)
+            .join(" ")
+            .toLowerCase();
 
-input.addEventListener("keydown", function (e) {
-  if (e.key === "Enter") {
-    e.preventDefault(); // ⬅️ INI PENTING
-  }
-});
-
-input.addEventListener("keyup", function () {
-  const keyword = this.value.toLowerCase();
-  results.innerHTML = "";
-
-  if (!keyword) {
-    results.style.display = "none";
-    return;
-  }
-
-  const found = searchIndex.filter(p =>
-    p.title.toLowerCase().includes(keyword) ||
-    p.content.includes(keyword)
+          searchIndex.push({ title, url: page, content });
+        })
+        .catch(err => console.warn(err.message))
+    )
   );
 
-  found.forEach(p => {
-    const a = document.createElement("a");
-    a.href = p.url;
-    a.innerHTML = `<strong>${p.title}</strong>`;
-    results.appendChild(a);
+  // ENTER → buka hasil pertama
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (lastResults.length > 0) {
+        window.location.href = lastResults[0].url;
+      }
+    }
   });
 
-  results.style.display = found.length ? "block" : "none";
+  // Ketik → tampilkan hasil
+  input.addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+    results.innerHTML = "";
+
+    if (!keyword) {
+      results.style.display = "none";
+      lastResults = [];
+      return;
+    }
+
+    lastResults = searchIndex.filter(p =>
+      p.title.toLowerCase().includes(keyword) ||
+      p.content.includes(keyword)
+    );
+
+    lastResults.forEach(p => {
+      const a = document.createElement("a");
+      a.href = p.url;
+      a.innerHTML = `<strong>${p.title}</strong>`;
+      results.appendChild(a);
+    });
+
+    results.style.display = lastResults.length ? "block" : "none";
+  });
+
 });
-
-
-
-
-
-
-
-
