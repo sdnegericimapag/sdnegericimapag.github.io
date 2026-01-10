@@ -1,4 +1,4 @@
-<script src="js/search.js">
+<script>
 const pages = [
   "index.html",
   "logo.html",
@@ -73,6 +73,7 @@ input.addEventListener("keyup", function () {
 });
 
 </script>
+
 
 
 
