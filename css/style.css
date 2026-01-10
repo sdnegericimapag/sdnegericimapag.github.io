@@ -127,6 +127,49 @@ p {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+/* ===============================
+   NAVBAR SEARCH
+=============================== */
+/* SEARCH BOX */
+.navbar-search {
+  position: relative;
+}
+
+.navbar-search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 180px;
+}
+
+/* SEARCH RESULT */
+#searchResults {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  width: 260px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  display: none;
+  z-index: 9999;
+}
+
+#searchResults a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+#searchResults a:hover {
+  background: #f0f0f0;
+}
+
+
 /* =========================================================
    4. BANNER
    ========================================================= */
@@ -766,6 +809,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
