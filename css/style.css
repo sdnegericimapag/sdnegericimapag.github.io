@@ -146,27 +146,20 @@ p {
 
 /* SEARCH RESULT */
 #searchResults {
-  position: absolute;
-  top: 38px;
-  right: 0;
-  width: 260px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.2);
-  display: none;
-  z-index: 9999;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 #searchResults a {
   display: block;
-  padding: 8px 12px;
+  padding: 6px 10px;
+  color: #222;
   text-decoration: none;
-  color: #333;
-  font-size: 13px;
 }
 
 #searchResults a:hover {
-  background: #f0f0f0;
+  background: rgba(0,0,0,0.05);
 }
 
 
@@ -809,6 +802,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
