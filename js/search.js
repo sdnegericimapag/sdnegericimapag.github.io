@@ -1,4 +1,4 @@
-<script>
+
 const pages = [
   "index.html",
   "logo.html",
@@ -72,7 +72,8 @@ input.addEventListener("keyup", function () {
   results.style.display = found.length ? "block" : "none";
 });
 
-</script>
+
+
 
 
 
