@@ -42,6 +42,12 @@ Promise.all(
 const input = document.getElementById("searchInput");
 const results = document.getElementById("searchResults");
 
+input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault(); // ⬅️ INI PENTING
+  }
+});
+
 input.addEventListener("keyup", function () {
   const keyword = this.value.toLowerCase();
   results.innerHTML = "";
@@ -65,4 +71,6 @@ input.addEventListener("keyup", function () {
 
   results.style.display = found.length ? "block" : "none";
 });
+
 </script>
+
