@@ -5,14 +5,14 @@ const pages = [
   "visimisi.html",
   "identitas.html",
   "tentang.html",
-  "tendik.html",
-  "eskul.html",
-  "lomba.html",
-  "prestasi.html",
-  "galeri.html",
-  "galerivideo.html",
-  "sekilasinfo.html",
-  "download.html"
+  "tendik",
+  "eskul",
+  "lomba",
+  "prestasi",
+  "galeri",
+  "galerivideo",
+  "sekilasinfo",
+  "download"
 ];
 
 const searchIndex = [];
@@ -73,4 +73,5 @@ input.addEventListener("keyup", function () {
 });
 
 </script>
+
 
