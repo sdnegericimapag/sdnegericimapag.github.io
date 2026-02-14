@@ -1,5 +1,5 @@
 const username = "sdnegericimapag";
-const repo = "ku";
+const repo = "sdnegericimapag.github.io";
 const folder = "artikel";
 
 const listElement = document.getElementById("artikel-list");
@@ -130,3 +130,4 @@ function loadArticle(path, evt) {
 
 // Jalankan pertama kali
 loadArticleList();
+
