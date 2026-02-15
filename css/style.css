@@ -759,7 +759,7 @@ p {
   position: fixed;
   top: 70px;       /* sesuaikan dengan tinggi navbar */
   right: 20px;
-  background-color: #007bff;
+  background-color: rgba(0, 176, 240, 0.5);
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -770,7 +770,8 @@ p {
 }
 
 #popup-saran:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 0, 0, 0.5);
+   color: yellow;
 }
 
 
@@ -822,6 +823,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
