@@ -751,7 +751,27 @@ p {
     to { opacity:1; }
 }
 
+/* =======================================================
+   POPUP SARAN
+   ======================================================= */
 
+#popup-saran {
+  position: fixed;
+  top: 70px;       /* sesuaikan dengan tinggi navbar */
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  z-index: 9999;   /* supaya tidak ketutup elemen lain */
+}
+
+#popup-saran:hover {
+  background-color: #0056b3;
+}
 
 
 
@@ -802,6 +822,7 @@ p {
     height: 60px;
   }
 }
+
 
 
 
